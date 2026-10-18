@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Cluster Resource Not Found</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="error-page-body">
+
+    <div class="error-container">
+        <div class="error-card">
+            <div class="card-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="card-title">kube-ingress :: error_handler</span>
+            </div>
+            <div class="error-body">
+                <div class="error-code">404</div>
+                <h1 class="error-title">HTTP_NOT_FOUND: Cluster Endpoint Missing</h1>
+                <p class="error-desc">
+                    The pod, container, or routing rule you requested does not exist or has been unscheduled by the ingress controller.
+                </p>
+                <div class="error-logs">
+                    <code>[ERROR] [client 192.168.1.105] Route match failed for requested path</code><br>
+                    <code>[WARN]  [proxy:nginx] No upstream server available for this request</code><br>
+                    <code>[INFO]  [systemd] Restarting route resolver daemon... Done.</code>
+                </div>
+                <div class="error-actions">
+                    <a href="index.html" class="btn primary-btn">Return to Primary Cluster Node</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
